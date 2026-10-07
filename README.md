@@ -46,7 +46,16 @@ SHA-256 changes completely if even a single byte of content changes, so the tool
    cd File-Integrity-Monitor
    ```
 
-2. Put the files you want to monitor inside a folder called `subfolder` (or change the `folder` variable at the top of `integrity_monitor.py`).
+2. Put the files you want to monitor inside a folder named `subfolder` in the project root.
+
+   > **💡 Want to monitor a different folder?**
+   > Open `integrity_monitor.py` and change the `folder` variable at the top of the file:
+   >
+   > ```python
+   > folder = "subfolder"   # change this to any folder path, e.g. "my_documents"
+   > ```
+   >
+   > Run the
 
 3. Run:
 
